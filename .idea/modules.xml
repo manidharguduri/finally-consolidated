@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/finally-consolidated.iml" filepath="$PROJECT_DIR$/finally-consolidated.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/finally-consolidated.main.iml" filepath="$PROJECT_DIR$/.idea/modules/finally-consolidated.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/finally-consolidated.test.iml" filepath="$PROJECT_DIR$/.idea/modules/finally-consolidated.test.iml" />
+    </modules>
+  </component>
+</project>
