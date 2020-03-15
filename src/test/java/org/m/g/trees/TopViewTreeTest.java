@@ -25,7 +25,9 @@ public class TopViewTreeTest {
         TreeNode<Integer> simpleIntegerTree = TreeUtils.getSimpleTree();
         List<Integer> executedList = topViewTree.topView(simpleIntegerTree);
         List<Integer> expectedIntegerList = Arrays.asList(4, 2, 1, 3, 6, 9);
-        Assert.assertThat("List equality without order",expectedIntegerList, containsInAnyOrder(executedList.toArray()));
+        Assert.assertThat("List equality without order", expectedIntegerList, containsInAnyOrder(executedList.toArray()));
 
     }
+
+
 }
