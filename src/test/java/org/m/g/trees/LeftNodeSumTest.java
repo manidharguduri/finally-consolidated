@@ -12,7 +12,7 @@ import static org.hamcrest.collection.IsIterableContainingInAnyOrder.containsInA
 
 public class LeftNodeSumTest {
 
-    LeftNodeSum leftNodeSum = new LeftNodeSum();
+    NodeSum leftNodeSum = new NodeSum();
 
     @Test
     public void simpleTree() {

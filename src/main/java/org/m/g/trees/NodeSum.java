@@ -2,7 +2,7 @@ package org.m.g.trees;
 
 import org.m.g.trees.model.TreeNode;
 
-public class LeftNodeSum {
+public class NodeSum {
 
     public int getLeftNodeSum(TreeNode<Integer> root)
     {
