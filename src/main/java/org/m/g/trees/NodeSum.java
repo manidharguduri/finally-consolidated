@@ -53,6 +53,19 @@ public class NodeSum {
         return result;
     }
 
+    public int getRightLeafNodeSum(TreeNode<Integer> treeNode,boolean isLeft) {
+        int resultValue = 0;
+        if(treeNode == null)
+            return 0;
+        if(isLeaf(treeNode) && isLeft)
+            resultValue = treeNode.getData();
+
+        resultValue+=getRightLeafNodeSum(treeNode.getLeftNode(),false);
+        resultValue+=getRightLeafNodeSum(treeNode.getRightNode(),true);
+        return resultValue;
+    }
+
+
     public boolean isLeaf(TreeNode<Integer> treeNode)
     {
         if(treeNode==null)
