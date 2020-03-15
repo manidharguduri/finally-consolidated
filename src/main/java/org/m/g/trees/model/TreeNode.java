@@ -1,4 +1,4 @@
-package org.m.g.trees;
+package org.m.g.trees.model;
 
 public class TreeNode<T> {
 

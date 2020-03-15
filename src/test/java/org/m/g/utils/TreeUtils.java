@@ -1,5 +1,6 @@
-package org.m.g.trees;
+package org.m.g.utils;
 
+import org.m.g.trees.model.TreeNode;
 public class TreeUtils {
 
     public static TreeNode<Integer> getSimpleTree() {
@@ -22,7 +23,7 @@ public class TreeUtils {
         return root;
     }
 
-    public TreeNode<Integer> getLeftBasedTree() {
+    public static TreeNode<Integer> getLeftBasedTree() {
         // Input:
         //			            1
         //		        2       		3
