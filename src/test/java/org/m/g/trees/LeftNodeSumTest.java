@@ -29,4 +29,19 @@ public class LeftNodeSumTest {
         Assert.assertEquals(sum,13);
     }
 
+    @Test
+    public void leftBasedTree() {
+        // Input:
+        //			            1
+        //		        2       		3
+        //           4              5       6
+        //		  7             8
+        //	   9	         13   12
+        //		          15
+
+        TreeNode<Integer> simpleIntegerTree = TreeUtils.getLeftBasedTree();
+        int sum = leftNodeSum.getLeftNodeSum(simpleIntegerTree);
+        Assert.assertEquals(sum,63);
+    }
+
 }
