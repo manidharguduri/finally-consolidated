@@ -1,6 +1,7 @@
 package org.m.g.trees;
 
 import org.m.g.trees.model.TreeNode;
+import sun.reflect.generics.tree.Tree;
 
 public class NodeSum {
 
@@ -14,5 +15,29 @@ public class NodeSum {
         result+= getLeftNodeSum(root.getLeftNode());
         result+=getLeftNodeSum(root.getRightNode());
         return  result;
+    }
+
+    public int getRightNodeSum(TreeNode<Integer> root)
+    {
+        int result = 0;
+        if(root == null)
+            return result;
+        if(root.getRightNode()!=null)
+            result = root.getRightNode().getData();
+        result += getRightNodeSum(root.getLeftNode());
+        result += getRightNodeSum(root.getRightNode());
+        return  result;
+    }
+
+    public int getLeafNodeSum(TreeNode<Integer> treeNode)
+    {
+        int result = 0;
+        if(treeNode==null)
+            return 0;
+        if(treeNode.getLeftNode()==null && treeNode.getRightNode()==null )
+            result = treeNode.getData();
+        result+=getLeafNodeSum(treeNode.getLeftNode());
+        result+=getLeafNodeSum(treeNode.getRightNode());
+        return result;
     }
 }
