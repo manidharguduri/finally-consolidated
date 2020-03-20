@@ -23,6 +23,25 @@ public class TreeUtils {
         return root;
     }
 
+    public static TreeNode<Integer> getUniValTree() {
+        // Input:
+        //			1
+        //		2		3
+        //   2     2       3
+        //				1
+        //			 1	   1
+        TreeNode<Integer> root = new TreeNode<>(1);
+        root.setLeftNode(new TreeNode(2));
+        root.getLeftNode().setLeftNode( new TreeNode(2));
+        root.getLeftNode().setRightNode(new TreeNode(2));
+        root.setRightNode(new TreeNode(3));
+        root.getRightNode().setRightNode( new TreeNode(3));
+        root.getRightNode().getRightNode().setLeftNode(new TreeNode(1));
+        root.getRightNode().getRightNode().getLeftNode().setLeftNode( new TreeNode(1));
+        root.getRightNode().getRightNode().getLeftNode().setRightNode( new TreeNode(1));
+        return root;
+    }
+
     public static TreeNode<Integer> getLeftBasedTree() {
         // Input:
         //			            1
