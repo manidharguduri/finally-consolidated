@@ -7,7 +7,7 @@ import org.m.g.utils.TreeUtils;
 
 public class LeafNodeSumTest {
 
-    NodeSum nodeSum = new NodeSum();
+    LeafNodeSum leafNodeSum = new LeafNodeSum();
 
 
     @Test
@@ -20,7 +20,7 @@ public class LeafNodeSumTest {
         //				   8
         //				      9
        TreeNode<Integer> simpleIntegerTree = TreeUtils.getSimpleTree();
-       int result = nodeSum.getLeafNodeSum(simpleIntegerTree);
+       int result = leafNodeSum.getLeftNodeSum(simpleIntegerTree);
        Assert.assertEquals(result,18);
     }
 
@@ -35,7 +35,7 @@ public class LeafNodeSumTest {
         //		          15
 
         TreeNode<Integer> leftBasedTree = TreeUtils.getLeftBasedTree();
-        int result = nodeSum.getLeafNodeSum(leftBasedTree);
+        int result = leafNodeSum.getLeftNodeSum(leftBasedTree);
         Assert.assertEquals(result,42);
     }
 }

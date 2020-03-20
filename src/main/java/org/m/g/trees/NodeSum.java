@@ -5,16 +5,7 @@ import sun.reflect.generics.tree.Tree;
 
 public class NodeSum {
 
-    public int getLeftNodeSum(TreeNode<Integer> root) {
-        int result = 0;
-        if (root == null)
-            return result;
-        if (root.getLeftNode() != null)
-            result = root.getLeftNode().getData();
-        result += getLeftNodeSum(root.getLeftNode());
-        result += getLeftNodeSum(root.getRightNode());
-        return result;
-    }
+
 
     public int getRightNodeSum(TreeNode<Integer> root) {
         int result = 0;
