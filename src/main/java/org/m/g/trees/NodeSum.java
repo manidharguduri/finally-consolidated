@@ -7,17 +7,6 @@ public class NodeSum {
 
 
 
-    public int getRightNodeSum(TreeNode<Integer> root) {
-        int result = 0;
-        if (root == null)
-            return result;
-        if (root.getRightNode() != null)
-            result = root.getRightNode().getData();
-        result += getRightNodeSum(root.getLeftNode());
-        result += getRightNodeSum(root.getRightNode());
-        return result;
-    }
-
     public int getLeafNodeSum(TreeNode<Integer> treeNode) {
         int result = 0;
         if (treeNode == null)
