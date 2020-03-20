@@ -7,8 +7,7 @@ import org.m.g.utils.TreeUtils;
 
 public class LeftLeafNodeSumTest {
 
-    NodeSum nodeSum = new NodeSum();
-
+    LeftLeafNodeSum nodeSum = new LeftLeafNodeSum();
 
     @Test
     public void simpleTree() {

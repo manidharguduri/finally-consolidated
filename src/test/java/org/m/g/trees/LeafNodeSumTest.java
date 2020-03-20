@@ -20,7 +20,7 @@ public class LeafNodeSumTest {
         //				   8
         //				      9
        TreeNode<Integer> simpleIntegerTree = TreeUtils.getSimpleTree();
-       int result = leafNodeSum.getLeftNodeSum(simpleIntegerTree);
+       int result = leafNodeSum.getLeafNodeSum(simpleIntegerTree);
        Assert.assertEquals(result,18);
     }
 
@@ -35,7 +35,7 @@ public class LeafNodeSumTest {
         //		          15
 
         TreeNode<Integer> leftBasedTree = TreeUtils.getLeftBasedTree();
-        int result = leafNodeSum.getLeftNodeSum(leftBasedTree);
+        int result = leafNodeSum.getLeafNodeSum(leftBasedTree);
         Assert.assertEquals(result,42);
     }
 }

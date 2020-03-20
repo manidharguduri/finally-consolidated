@@ -4,14 +4,14 @@ import org.m.g.trees.model.TreeNode;
 
 public class LeafNodeSum {
 
-    public int getLeftNodeSum(TreeNode<Integer> root) {
+    public int getLeafNodeSum(TreeNode<Integer> treeNode) {
         int result = 0;
-        if (root == null)
-            return result;
-        if (root.getLeftNode() != null)
-            result = root.getLeftNode().getData();
-        result += getLeftNodeSum(root.getLeftNode());
-        result += getLeftNodeSum(root.getRightNode());
+        if (treeNode == null)
+            return 0;
+        if (TreeCommonUtils.isLeaf(treeNode))
+            result = treeNode.getData();
+        result += getLeafNodeSum(treeNode.getLeftNode());
+        result += getLeafNodeSum(treeNode.getRightNode());
         return result;
     }
 
