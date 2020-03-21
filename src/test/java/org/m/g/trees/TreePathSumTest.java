@@ -6,10 +6,7 @@ import org.m.g.trees.model.TreeNode;
 import org.m.g.utils.TreeUtils;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-
-import static org.hamcrest.collection.IsIterableContainingInAnyOrder.containsInAnyOrder;
 
 public class TreePathSumTest {
 
