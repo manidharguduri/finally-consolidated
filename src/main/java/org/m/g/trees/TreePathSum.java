@@ -7,7 +7,7 @@ import java.util.List;
 
 public class TreePathSum {
 
-    List<Integer> queue = new ArrayList<>();
+    private List<Integer> queue = new ArrayList<>();
 
     // function which returns the number of path...
     public void noOfPaths(TreeNode<Integer> treeNode, List<List<Integer>> resultList, int val) {
