@@ -8,9 +8,9 @@ import org.m.g.utils.TreeUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TreePathSumTest {
+public class KTreePathSumTest {
 
-    TreePathSum treePathSum = new TreePathSum();
+    KTreePathSum treePathSum = new KTreePathSum();
 
     @Test
     public void processingNegativeTree() {

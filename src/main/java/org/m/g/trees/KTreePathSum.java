@@ -5,7 +5,7 @@ import org.m.g.trees.model.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TreePathSum {
+public class KTreePathSum {
 
     private List<Integer> queue = new ArrayList<>();
 
