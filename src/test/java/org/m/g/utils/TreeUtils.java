@@ -84,4 +84,33 @@ public class TreeUtils {
         root.getRightNode().getLeftNode().setLeftNode(new TreeNode<>(-8));
         return root;
     }
+
+    public static TreeNode<Integer> getMainTree() {
+        // Input:
+        //			            1
+        //		        2       		3
+        //           4              5      6
+        //		 7             8
+        //	   9
+        TreeNode<Integer> root = new TreeNode<>(1);
+        root.setLeftNode(new TreeNode(2));
+        root.setRightNode(new TreeNode<>(3));
+        root.getLeftNode().setLeftNode(new TreeNode<>(4));
+        root.getLeftNode().getLeftNode().setLeftNode(new TreeNode<>(7));
+        root.getLeftNode().getLeftNode().getLeftNode().setLeftNode(new TreeNode<>(9));
+        root.getRightNode().setLeftNode(new TreeNode<>(5));
+        root.getRightNode().setRightNode(new TreeNode<>(6));
+        root.getRightNode().getLeftNode().setLeftNode(new TreeNode<>(8));
+        return root;
+    }
+
+    public static TreeNode<Integer> getSubTree() {
+        // Input:
+        //		          		3
+        //                   5      6
+        TreeNode<Integer> root = new TreeNode<>(3);
+        root.setLeftNode(new TreeNode(5));
+        root.setRightNode(new TreeNode<>(6));
+        return root;
+    }
 }

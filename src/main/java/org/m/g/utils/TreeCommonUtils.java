@@ -10,4 +10,15 @@ public class TreeCommonUtils {
             return false;
         return treeNode.getLeftNode() == null && treeNode.getRightNode() == null;
     }
+
+    public static boolean isIdentical(TreeNode<Integer> input1,TreeNode<Integer> input2)
+    {
+       if(input1==null && input2==null)
+         return true;
+
+        return input1!=null && input2!=null
+                && input1.getData().equals(input2.getData())
+                && isIdentical(input1.getLeftNode(),input2.getLeftNode())
+                && isIdentical(input2.getRightNode(),input2.getRightNode());
+    }
 }
