@@ -1,6 +1,7 @@
 package org.m.g.trees;
 
 import org.m.g.trees.model.TreeNode;
+import org.m.g.utils.TreeCommonUtils;
 
 public class LeafNodeSum {
 

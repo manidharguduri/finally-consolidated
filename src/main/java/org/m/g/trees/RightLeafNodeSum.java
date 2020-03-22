@@ -1,7 +1,7 @@
 package org.m.g.trees;
 
 import org.m.g.trees.model.TreeNode;
-import sun.reflect.generics.tree.Tree;
+import org.m.g.utils.TreeCommonUtils;
 
 public class RightLeafNodeSum {
 

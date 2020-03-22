@@ -1,4 +1,4 @@
-package org.m.g.trees;
+package org.m.g.utils;
 
 import org.m.g.trees.model.TreeNode;
 import sun.reflect.generics.tree.Tree;
